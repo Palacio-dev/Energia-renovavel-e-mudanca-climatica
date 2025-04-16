@@ -3,14 +3,14 @@
 BEGIN;
 
 
-CREATE TABLE IF NOT EXISTS public."Area"
+CREATE TABLE IF NOT EXISTS public."AREA"
 (
-    id bigint NOT NULL,
+    id bigint NOT NULL GENERATED ALWAYS AS IDENTITY,
     nome character varying,
     PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public."Mes"
+CREATE TABLE IF NOT EXISTS public."MES"
 (
     id character varying NOT NULL,
     numero bigint NOT NULL,
@@ -18,15 +18,15 @@ CREATE TABLE IF NOT EXISTS public."Mes"
     PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public.ano
+CREATE TABLE IF NOT EXISTS public."ANO"
 (
     id bigint NOT NULL,
     PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public.mud_temp
+CREATE TABLE IF NOT EXISTS public."MUD_TEMP"
 (
-    id bigint NOT NULL,
+    id bigint NOT NULL GENERATED ALWAYS AS IDENTITY,
     mud_value double precision,
     desvio_padrao double precision,
     id_area bigint NOT NULL,
@@ -35,9 +35,9 @@ CREATE TABLE IF NOT EXISTS public.mud_temp
     PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public.geracao_energia
+CREATE TABLE IF NOT EXISTS public."GERACAO_ENERGIA"
 (
-    id bigint NOT NULL,
+    id bigint NOT NULL GENERATED ALWAYS AS IDENTITY,
     valor double precision,
     id_area bigint NOT NULL,
     id_ano bigint NOT NULL,
@@ -45,14 +45,14 @@ CREATE TABLE IF NOT EXISTS public.geracao_energia
     PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public."Tipo_energia"
+CREATE TABLE IF NOT EXISTS public."TIPO_ENERGIA"
 (
-    id bigint NOT NULL,
+    id bigint NOT NULL GENERATED ALWAYS AS IDENTITY,
     valor character varying,
     PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public."Pais"
+CREATE TABLE IF NOT EXISTS public."PAIS"
 (
     id bigint NOT NULL,
     codigo character varying,
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS public."Pais"
     PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public."Grupo"
+CREATE TABLE IF NOT EXISTS public."GRUPO"
 (
     id bigint NOT NULL,
     codigo character varying,
@@ -74,73 +74,73 @@ CREATE TABLE IF NOT EXISTS public."Pais_Grupo"
     "Grupo_id" bigint NOT NULL
 );
 
-ALTER TABLE IF EXISTS public."Mes"
+ALTER TABLE IF EXISTS public."MES"
     ADD FOREIGN KEY (id_ano)
-    REFERENCES public.ano (id) MATCH SIMPLE
+    REFERENCES public."ANO" (id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
 
 
-ALTER TABLE IF EXISTS public.mud_temp
+ALTER TABLE IF EXISTS public."MUD_TEMP"
     ADD FOREIGN KEY (id_area)
-    REFERENCES public."Area" (id) MATCH SIMPLE
+    REFERENCES public."AREA" (id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
 
 
-ALTER TABLE IF EXISTS public.mud_temp
+ALTER TABLE IF EXISTS public."MUD_TEMP"
     ADD FOREIGN KEY (id_mes)
-    REFERENCES public."Mes" (id) MATCH SIMPLE
+    REFERENCES public."MES" (id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
 
 
-ALTER TABLE IF EXISTS public.mud_temp
+ALTER TABLE IF EXISTS public."MUD_TEMP"
     ADD FOREIGN KEY (id_ano)
-    REFERENCES public.ano (id) MATCH SIMPLE
+    REFERENCES public."ANO" (id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
 
 
-ALTER TABLE IF EXISTS public.geracao_energia
+ALTER TABLE IF EXISTS public."GERACAO_ENERGIA"
     ADD FOREIGN KEY (id_area)
-    REFERENCES public."Area" (id) MATCH SIMPLE
+    REFERENCES public."AREA" (id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
 
 
-ALTER TABLE IF EXISTS public.geracao_energia
+ALTER TABLE IF EXISTS public."GERACAO_ENERGIA"
     ADD FOREIGN KEY (id_ano)
-    REFERENCES public.ano (id) MATCH SIMPLE
+    REFERENCES public."ANO" (id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
 
 
-ALTER TABLE IF EXISTS public.geracao_energia
+ALTER TABLE IF EXISTS public."GERACAO_ENERGIA"
     ADD FOREIGN KEY (id_tipo)
-    REFERENCES public."Tipo_energia" (id) MATCH SIMPLE
+    REFERENCES public."TIPO_ENERGIA" (id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
 
 
-ALTER TABLE IF EXISTS public."Pais"
+ALTER TABLE IF EXISTS public."PAIS"
     ADD FOREIGN KEY (id)
-    REFERENCES public."Area" (id) MATCH SIMPLE
+    REFERENCES public."AREA" (id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
 
 
-ALTER TABLE IF EXISTS public."Grupo"
+ALTER TABLE IF EXISTS public."GRUPO"
     ADD FOREIGN KEY (id)
-    REFERENCES public."Area" (id) MATCH SIMPLE
+    REFERENCES public."AREA" (id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
@@ -148,7 +148,7 @@ ALTER TABLE IF EXISTS public."Grupo"
 
 ALTER TABLE IF EXISTS public."Pais_Grupo"
     ADD FOREIGN KEY ("Pais_id")
-    REFERENCES public."Pais" (id) MATCH SIMPLE
+    REFERENCES public."PAIS" (id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
@@ -156,7 +156,7 @@ ALTER TABLE IF EXISTS public."Pais_Grupo"
 
 ALTER TABLE IF EXISTS public."Pais_Grupo"
     ADD FOREIGN KEY ("Grupo_id")
-    REFERENCES public."Grupo" (id) MATCH SIMPLE
+    REFERENCES public."GRUPO" (id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;

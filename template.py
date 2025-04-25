@@ -1,9 +1,9 @@
 import psycopg2
 
 conn = psycopg2.connect(
-    dbname="raDoPalacio",
+    dbname="EnergiaTempDB",
     user="postgres",
-    password="senha",
+    password="",
     host="localhost",
     port="5432"
 )

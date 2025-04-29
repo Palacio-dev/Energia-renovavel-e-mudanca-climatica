@@ -70,7 +70,17 @@ FROM STDIN WITH (
 )
 """
 
-arquivo = open('*arquivo*.csv', 'r', encoding='utf-8')
+sql = """
+COPY "ANO" (Year)
+FROM STDIN WITH (
+    FORMAT CSV,
+    HEADER,
+    DELIMITER ',',
+    NULL ''
+)
+"""
+
+arquivo = open('Datasets/teste.csv', 'r', encoding='utf-8')
 cursor.copy_expert(sql, arquivo)
 
 arquivo.close()

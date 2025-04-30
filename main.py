@@ -21,6 +21,7 @@ def main():
 def query(cursor):
     #load_anos_meses()
     load_areas(cursor)
+
     return 0
 
 if __name__ == '__main__':

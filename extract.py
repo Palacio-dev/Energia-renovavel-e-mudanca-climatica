@@ -15,10 +15,25 @@ def load_areas(cursor: connection):
         linha_area = df[df['Area'] == area_nome]
         code = linha_area.iloc[0]['Country code']
         tipo = linha_area.iloc[0]['Area type']
-        cursor.execute(f'INSERT INTO "AREA"  (id, numero, id_ano) VALUES ()')
+
+        cursor.execute(f'INSERT INTO "AREA" (nome) VALUES (%s) RETURNING id', (area_nome,))
+        area_id = cursor.fetchone()[0]
+
+        if tipo == 'Country':
+            cursor.execute('INSERT INTO "PAIS" (id, codigo, nome) VALUES (%s, %s, %s)',
+                           (area_id, code, area_nome))
+        elif tipo == 'Region':
+            cursor.execute('INSERT INTO "GRUPO" (id, codigo, nome) VALUES (%s, %s, %s)',
+                           (area_id, code, area_nome))
 
 
+def load_tipo_energia(cursor: connection):
+    df = pd.read_csv('Datasets/energia.csv', usecols=['Category', 'Variable'])
+    tipos_energia = list(df[df['Category'] == 'Electricity generation']['Variable'].unique())
+    tipos_energia.remove('Total Generation')
 
+    for tipo in tipos_energia:
+        cursor.execute(f'INSERT INTO "TIPO_ENERGIA" (nome) VALUES (%s) RETURNING id', (area_nome,))
 
 
 def load_mudanca_temperatura(cursor: connection):
@@ -29,5 +44,3 @@ def load_geracao_energia(cursor: connection):
     pass
 
 
-def load_tipo_energia(cursor: connection):
-    pass

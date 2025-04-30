@@ -19,10 +19,9 @@ def main():
 
 # AÇÃO USANDO A CONEXÃO COM OO DB
 def query(cursor):
-    #load_anos_meses()
+    #load_anos_meses(cursor)
     #load_areas(cursor)
-
-    load_tipo_energia(cursor)
+    #load_tipo_energia(cursor)
 
     return 0
 

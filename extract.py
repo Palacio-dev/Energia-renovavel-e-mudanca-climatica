@@ -15,5 +15,6 @@ def load_areas(cursor: connection):
         linha_area = df[df['Area'] == area_nome]
         code = linha_area.iloc[0]['Country code']
         tipo = linha_area.iloc[0]['Area type']
+        cursor.execute(f'INSERT INTO "MES  (id, numero, id_ano) VALUES ()')
         #print(f"{area_nome} - {code} - {tipo}.") 
 

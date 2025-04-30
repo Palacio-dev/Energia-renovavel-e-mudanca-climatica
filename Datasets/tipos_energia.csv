@@ -3,7 +3,7 @@ Bioenergy,True
 Coal,False
 Gas,False
 Hydro,True
-Nuclear,True
+Nuclear,False
 Other Fossil,False
 Other Renewables,True
 Solar,True

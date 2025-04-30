@@ -28,12 +28,10 @@ def load_areas(cursor: connection):
 
 
 def load_tipo_energia(cursor: connection):
-    df = pd.read_csv('Datasets/energia.csv', usecols=['Category', 'Variable'])
-    tipos_energia = list(df[df['Category'] == 'Electricity generation']['Variable'].unique())
-    tipos_energia.remove('Total Generation')
+    df = pd.read_csv('Datasets/tipos_energia.csv', usecols=['Tipo', 'Renovavel'])
 
-    for tipo in tipos_energia:
-        cursor.execute(f'INSERT INTO "TIPO_ENERGIA" (nome) VALUES (%s) RETURNING id', (area_nome,))
+    for linha in df.itertuples():
+        cursor.execute(f'INSERT INTO "TIPO_ENERGIA" (valor, renovavel) VALUES (%s, %s) RETURNING id', (linha[1], linha[2]))
 
 
 def load_mudanca_temperatura(cursor: connection):

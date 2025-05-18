@@ -2,13 +2,16 @@ import psycopg2
 from extract import *
 
 def main():
-    conn = psycopg2.connect(
-        dbname="EnergiaTempDB",
-        user="postgres",
-        password="",
-        host="localhost",
-        port="5432"
-    )
+
+    conn = conectar()
+
+    # conn = psycopg2.connect(
+    #     dbname="EnergiaTempDB",
+    #     user="postgres",
+    #     password="",
+    #     host="localhost",
+    #     port="5432"
+    # )
     cursor = conn.cursor()
 
     query(cursor)
@@ -16,6 +19,17 @@ def main():
     conn.commit()
     cursor.close()
     conn.close()
+
+
+
+def conectar():
+    return psycopg2.connect(
+        dbname='EnergiaTempDB',
+        user='postgres',
+        password='',
+        host='localhost',
+        port='5432'
+    ) 
 
 # AÇÃO USANDO A CONEXÃO COM OO DB
 def query(cursor):

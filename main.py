@@ -22,7 +22,9 @@ def query(cursor):
     #load_anos_meses(cursor)
     #load_areas(cursor)
     #load_tipo_energia(cursor)
-
+    #load_mudanca_temperatura(cursor)
+    #load_geracao_energia(cursor)
+    #load_pais_grupo(cursor)
     return 0
 
 if __name__ == '__main__':

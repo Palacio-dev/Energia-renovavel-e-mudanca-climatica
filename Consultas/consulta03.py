@@ -1,22 +1,28 @@
 import pandas as pd
-from psycopg2._psycopg import connection
-from main import conectar
+import psycopg2
 
-sql = {
-    '''
-    SELECT a.id/10*10 AS decada, SUM(e.valor) AS total
-    FROM EMISSAO e
-    JOIN ANO a ON e.ano_id = a.id
-    JOIN PAIS p ON e.pais_id = p.id
-    WHERE p.nome = 'China'
-    GROUP BY decada
-    ORDER BY decada;
+
+sql = '''
+    SELECT p.nome AS PAIS, AVG(g.mud_value) AS avg_valor_temp, te.valor as NOME, te.renovavel as RENOVAVEL
+    FROM "MUD_TEMP" g
+    JOIN "AREA" a ON g.id_area = a.id
+    JOIN "PAIS" p ON a.id = p.id
+    JOIN "GERACAO_ENERGIA" ge ON a.id = ge.id_area
+    JOIN "TIPO_ENERGIA" te ON ge.id_tipo = te.id
+    WHERE te.renovavel = 'true'
+    GROUP BY p.nome, g.mud_value, te.valor, te.renovavel
 '''
-}
-conn = conectar()
+
+conn = psycopg2.connect(
+        dbname="EnergiaTempDB",
+        user="postgres",
+        password="",
+        host="localhost",
+        port="5432"
+    )
+
 df = pd.read_sql_query(sql, conn) 
 
-conn = conectar()
 df = pd.read_sql_query(sql, conn) 
 df.to_csv('../Resultado_Consultas/consulta03.csv', index=False)
 

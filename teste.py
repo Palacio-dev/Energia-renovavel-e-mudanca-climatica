@@ -2,8 +2,23 @@ import pandas as pd
 import psycopg2
 
 
-df = pd.read_csv('Datasets/temperature_change.csv', encoding='ISO-8859-1')
-print(df['Area'].unique())
+usecols = [
+        "Area", "Year", "Category", "Variable",
+        "Unit", "Value"
+    ]
+df = pd.read_csv(
+        "Datasets/energia.csv",
+        usecols=usecols,
+        encoding="ISO-8859-1"
+    )
+
+    # 2) filtra só Electricity generation e Power sector emissions
+categorias = ["Electricity generation", "Power sector emissions"]
+df = df[df["Category"].isin(categorias)]
+# descarta linhas de porcentagem
+df = df[~df["Unit"].str.contains("%", na=False)]
+print(df)
+
 
 
 # anos = list(range(1961, 2020))

@@ -104,7 +104,13 @@ def load_mudanca_temperatura(cursor):
 
 
 def load_geracao_energia(cursor):
-    # 1) lê só as colunas que interessam
+
+    cursor.execute('SELECT id, nome FROM "AREA"')
+    area_map = {nome: id_ for id_, nome in cursor.fetchall()}
+
+    cursor.execute('SELECT id, valor FROM "TIPO_ENERGIA"')
+    tipo_map = {valor: id_ for id_, valor in cursor.fetchall()}
+
     usecols = [
         "Area", "Year", "Category", "Variable",
         "Unit", "Value"
@@ -115,28 +121,12 @@ def load_geracao_energia(cursor):
         encoding="ISO-8859-1"
     )
 
-    # 2) filtra só Electricity generation e Power sector emissions
     categorias = ["Electricity generation", "Power sector emissions"]
     df = df[df["Category"].isin(categorias)]
-    # descarta linhas de porcentagem
+
     df = df[~df["Unit"].str.contains("%", na=False)]
+    df = df[df["Variable"].isin(tipo_map.keys())]
 
-    # 3) carrega os mapas de lookup em memória
-    cursor.execute('SELECT id, nome FROM "AREA"')
-    area_map = {nome: id_ for id_, nome in cursor.fetchall()}
-
-    cursor.execute('SELECT id, valor FROM "TIPO_ENERGIA"')
-    tipo_map = {valor: id_ for id_, valor in cursor.fetchall()}
-
-    # 4) prepara o INSERT
-    sql = """
-    INSERT INTO "GERACAO_ENERGIA"
-      (unidade_geracao, valor_geracao,
-       unidade_emissao,  valor_emissao,
-       id_area,          id_ano,
-       id_tipo)
-    VALUES (%s, %s, %s, %s, %s, %s, %s)
-    """
 
     for _, row in df.iterrows():
         area = row["Area"]
@@ -145,42 +135,55 @@ def load_geracao_energia(cursor):
         unit = row["Unit"]
         val  = float(row["Value"])
 
-        # pula áreas não cadastradas
         if area not in area_map:
-            continue
-        # pula tipos não cadastrados
-        if var not in tipo_map:
             continue
 
         id_area = area_map[area]
         id_ano  = ano
         id_tipo = tipo_map[var]
 
-        # decide onde vai o valor: geração ou emissão
         if row["Category"] == "Electricity generation":
             unidade_ger = unit
             valor_ger   = val
-            unidade_emi = None
-            valor_emi   = None
-        else:  # Power sector emissions
-            unidade_ger = None
-            valor_ger   = None
+            sql = """
+                INSERT INTO "GERACAO_ENERGIA"
+                    (unidade_geracao, valor_geracao,
+                    id_area,          id_ano,
+                    id_tipo)
+                VALUES (%s, %s, %s, %s, %s)
+            """
+            cursor.execute(
+                sql,
+                (
+                    unidade_ger,
+                    valor_ger,
+                    id_area,
+                    id_ano,
+                    id_tipo
+                )
+            )
+        else:
             unidade_emi = unit
             valor_emi   = val
 
-        cursor.execute(
-            sql,
-            (
-                unidade_ger,
-                valor_ger,
-                unidade_emi,
-                valor_emi,
-                id_area,
-                id_ano,
-                id_tipo
-            )
-        )
+            cursor.execute('SELECT id FROM "GERACAO_ENERGIA" WHERE id_area = %s AND id_ano = %s AND id_tipo = %s', 
+                           (id_area, id_ano, id_tipo))
+            id_row = cursor.fetchone()[0]
 
+            sql = """
+                UPDATE "GERACAO_ENERGIA"
+                SET "valor_emissao" = %s,
+                    "unidade_emissao" = %s
+                WHERE id = %s;
+            """
+            cursor.execute(
+                sql,
+                (
+                    valor_emi,
+                    unidade_emi,
+                    id_row
+                )
+            )
 
 def load_pais_grupo(cursor):
     # 1) lê só as colunas relevantes

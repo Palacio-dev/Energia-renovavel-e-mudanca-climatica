@@ -1,0 +1,843 @@
+pais,tipo_energia,total_gerado,unidade
+China,Coal,87761.06999999998,TWh
+United States of America,Coal,37517.13000000001,TWh
+United States of America,Gas,28686.340000000004,TWh
+India,Coal,21112.33,TWh
+United States of America,Nuclear,19710.650000000005,TWh
+Russian Federation (the),Gas,12119.689999999999,TWh
+France,Nuclear,10305.76,TWh
+Japan,Gas,8864.43,TWh
+Japan,Coal,8049.560000000002,TWh
+Germany,Coal,6143.76,TWh
+South Africa,Coal,5598.03,TWh
+South Korea,Coal,4907.21,TWh
+Iran (Islamic Republic of),Gas,4682.25,TWh
+Russian Federation (the),Nuclear,4474.959999999999,TWh
+Russian Federation (the),Coal,4409.16,TWh
+China,Nuclear,4314.360000000001,TWh
+Australia,Coal,4081.77,TWh
+Japan,Nuclear,3844.859999999999,TWh
+Mexico,Gas,3743.0899999999992,TWh
+South Korea,Nuclear,3704.6799999999985,TWh
+Saudi Arabia,Gas,3582.9399999999996,TWh
+United Kingdom,Gas,3356.4100000000008,TWh
+Italy,Gas,3283.8399999999997,TWh
+Poland,Coal,3259.14,TWh
+China,Gas,3157.25,TWh
+Saudi Arabia,Other Fossil,3067.3,TWh
+Taiwan,Coal,3049.95,TWh
+Egypt,Gas,2982.1500000000005,TWh
+Japan,Other Fossil,2942.2800000000007,TWh
+South Korea,Gas,2787.2300000000005,TWh
+Germany,Nuclear,2713.8100000000004,TWh
+Thailand,Gas,2691.9500000000003,TWh
+Indonesia,Coal,2529.05,TWh
+Canada,Nuclear,2294.5899999999997,TWh
+United Arab Emirates,Gas,2288.4199999999996,TWh
+Turkey,Gas,2071.9,TWh
+United Kingdom,Coal,2058.31,TWh
+Ukraine,Nuclear,1931.39,TWh
+Germany,Gas,1878.3,TWh
+India,Gas,1863.77,TWh
+Canada,Coal,1863.4999999999995,TWh
+Turkey,Coal,1815.3799999999994,TWh
+Argentina,Gas,1746.0200000000002,TWh
+Taiwan,Gas,1711.8899999999999,TWh
+Spain,Gas,1677.34,TWh
+United Kingdom,Nuclear,1668.3899999999999,TWh
+Malaysia,Gas,1623.68,TWh
+United States of America,Other Fossil,1580.38,TWh
+Sweden,Nuclear,1551.38,TWh
+Kazakhstan,Coal,1486.15,TWh
+Canada,Gas,1481.37,TWh
+Spain,Nuclear,1467.2799999999997,TWh
+Netherlands,Gas,1443.8600000000004,TWh
+Ukraine,Coal,1320.9899999999998,TWh
+Algeria,Gas,1304.14,TWh
+Mexico,Other Fossil,1284.0700000000002,TWh
+Malaysia,Coal,1242.07,TWh
+Viet Nam,Coal,1229.8099999999997,TWh
+China,Other Fossil,1171.3300000000002,TWh
+Iran (Islamic Republic of),Other Fossil,1162.5300000000002,TWh
+Spain,Coal,1103.3599999999997,TWh
+Uzbekistan,Gas,1096.26,TWh
+Czechia,Coal,1085.1600000000003,TWh
+Bangladesh,Gas,1077.41,TWh
+Belgium,Nuclear,1061.5800000000002,TWh
+Indonesia,Gas,1051.19,TWh
+Australia,Gas,1048.28,TWh
+Brazil,Gas,1008.0400000000002,TWh
+Singapore,Gas,960.5799999999998,TWh
+Pakistan,Gas,926.41,TWh
+Italy,Other Fossil,888.7500000000001,TWh
+Philippines (the),Coal,879.27,TWh
+Taiwan,Nuclear,866.43,TWh
+Italy,Coal,841.3000000000003,TWh
+Iraq,Other Fossil,832.5400000000002,TWh
+Kuwait,Other Fossil,825.75,TWh
+Qatar,Gas,814.5799999999999,TWh
+India,Nuclear,770.5400000000002,TWh
+Belarus,Gas,768.1600000000001,TWh
+Viet Nam,Gas,754.61,TWh
+Thailand,Coal,754.2299999999999,TWh
+Israel,Coal,702.59,TWh
+Mexico,Coal,699.5699999999999,TWh
+Pakistan,Other Fossil,690.0000000000001,TWh
+Iraq,Gas,680.7299999999999,TWh
+Kuwait,Gas,669.23,TWh
+Czechia,Nuclear,669.0699999999998,TWh
+Switzerland,Nuclear,633.8899999999999,TWh
+France,Gas,631.84,TWh
+Serbia,Coal,626.6499999999999,TWh
+Oman,Gas,605.56,TWh
+Greece,Coal,604.6500000000001,TWh
+Finland,Nuclear,600.07,TWh
+Bahrain,Gas,596.1800000000001,TWh
+Germany,Other Fossil,586.68,TWh
+Israel,Gas,583.98,TWh
+Netherlands,Coal,576.2499999999999,TWh
+Hong Kong,Coal,553.9300000000001,TWh
+Belgium,Gas,552.95,TWh
+Indonesia,Other Fossil,546.1600000000001,TWh
+Nigeria,Gas,545.21,TWh
+Russian Federation (the),Other Fossil,517.13,TWh
+Venezuela (Bolivarian Republic of),Gas,485.1499999999999,TWh
+Bulgaria,Coal,480.47999999999996,TWh
+Spain,Other Fossil,478.61000000000007,TWh
+Azerbaijan,Gas,466.52,TWh
+Egypt,Other Fossil,459.65,TWh
+Chile,Coal,456.68000000000006,TWh
+Turkmenistan,Gas,454.48,TWh
+Romania,Coal,451.91999999999996,TWh
+South Korea,Other Fossil,436.71000000000004,TWh
+Ukraine,Gas,432.99999999999994,TWh
+Brazil,Other Fossil,418.19999999999993,TWh
+Philippines (the),Gas,416.74,TWh
+Morocco,Coal,414.06999999999994,TWh
+Bulgaria,Nuclear,413.90000000000003,TWh
+Kazakhstan,Gas,404.4,TWh
+Slovakia,Nuclear,403.7099999999999,TWh
+France,Coal,401.91999999999996,TWh
+Tunisia,Gas,401.8400000000001,TWh
+Brazil,Coal,394.89,TWh
+Libya,Gas,376.53,TWh
+Hungary,Nuclear,375.48000000000013,TWh
+Ireland,Gas,356.80000000000007,TWh
+Cuba,Other Fossil,355.38999999999993,TWh
+Peru,Gas,351.93,TWh
+Brazil,Nuclear,350.76,TWh
+Puerto Rico,Other Fossil,338.16999999999996,TWh
+India,Other Fossil,337.29,TWh
+Venezuela (Bolivarian Republic of),Other Fossil,330.67,TWh
+Hong Kong,Gas,326.69999999999993,TWh
+Libya,Other Fossil,318.02000000000004,TWh
+Taiwan,Other Fossil,318.00000000000006,TWh
+Lebanon,Other Fossil,317.9699999999999,TWh
+Greece,Gas,317.0799999999999,TWh
+Syrian Arab Republic (the),Gas,310.36,TWh
+Portugal,Gas,307.68,TWh
+Denmark,Coal,307.62999999999994,TWh
+Syrian Arab Republic (the),Other Fossil,304.84000000000003,TWh
+South Africa,Nuclear,303.6,TWh
+Chile,Gas,300.96999999999997,TWh
+Argentina,Other Fossil,287.96,TWh
+Colombia,Gas,278.21999999999997,TWh
+France,Other Fossil,272.92999999999995,TWh
+United Kingdom,Other Fossil,272.0400000000001,TWh
+Mexico,Nuclear,261.44,TWh
+Portugal,Coal,256.05999999999995,TWh
+Austria,Gas,247.96,TWh
+Romania,Nuclear,239.8,TWh
+Romania,Gas,235.31,TWh
+Hungary,Gas,235.17000000000002,TWh
+Bosnia Herzegovina,Coal,231.65000000000003,TWh
+Canada,Other Fossil,219.99999999999997,TWh
+Dominican Republic (the),Other Fossil,212.83000000000007,TWh
+Finland,Coal,212.81999999999996,TWh
+Estonia,Other Fossil,212.8,TWh
+Korea (the Democratic People's Republic of),Coal,207.09,TWh
+Jordan,Gas,203.15,TWh
+Bangladesh,Other Fossil,201.17999999999998,TWh
+Trinidad and Tobago,Gas,195.76999999999998,TWh
+Poland,Gas,194.46,TWh
+New Zealand,Gas,194.16000000000003,TWh
+Pakistan,Coal,189.47,TWh
+Argentina,Nuclear,187.42,TWh
+Finland,Gas,185.15,TWh
+Pakistan,Nuclear,172.66,TWh
+Ecuador,Other Fossil,159.52999999999997,TWh
+Greece,Other Fossil,155.32999999999996,TWh
+Singapore,Other Fossil,152.04999999999998,TWh
+Hungary,Coal,150.57000000000002,TWh
+Finland,Other Fossil,145.31000000000003,TWh
+Slovenia,Nuclear,142.78,TWh
+Netherlands,Other Fossil,133.27,TWh
+Moldova,Gas,132.09999999999997,TWh
+Cote d'Ivoire,Gas,131.15,TWh
+Kosovo,Coal,128.98999999999998,TWh
+Denmark,Gas,125.67,TWh
+Philippines (the),Other Fossil,125.25999999999998,TWh
+Myanmar,Gas,124.96999999999998,TWh
+Jordan,Other Fossil,122.91999999999999,TWh
+Australia,Other Fossil,121.68,TWh
+Colombia,Coal,120.15,TWh
+Bolivia,Gas,119.65,TWh
+Slovenia,Coal,117.38000000000002,TWh
+Puerto Rico,Gas,117.09,TWh
+Mongolia,Coal,115.42999999999999,TWh
+Poland,Other Fossil,114.73000000000002,TWh
+Lithuania,Nuclear,114.06,TWh
+Chile,Other Fossil,111.90000000000002,TWh
+Sri Lanka,Other Fossil,110.82000000000001,TWh
+Cyprus,Other Fossil,109.49999999999999,TWh
+Israel,Other Fossil,106.44000000000004,TWh
+Ireland,Coal,104.52000000000001,TWh
+North Macedonia,Coal,103.83999999999999,TWh
+Belgium,Coal,102.55999999999999,TWh
+Jamaica,Other Fossil,102.08,TWh
+Belgium,Other Fossil,100.02000000000001,TWh
+Austria,Coal,98.51,TWh
+Netherlands,Nuclear,97.27999999999999,TWh
+Yemen,Other Fossil,97.01,TWh
+Portugal,Other Fossil,94.50000000000001,TWh
+Turkey,Other Fossil,94.42999999999998,TWh
+Lao People's Democratic Republic (the),Coal,92.17000000000002,TWh
+Honduras,Other Fossil,92.12,TWh
+Brunei Darussalam,Gas,89.84,TWh
+Ghana,Gas,89.8,TWh
+Slovakia,Coal,89.73,TWh
+Dominican Republic (the),Gas,89.67999999999999,TWh
+Sudan (the),Other Fossil,87.97,TWh
+Ireland,Other Fossil,84.17999999999998,TWh
+Zimbabwe,Coal,83.5,TWh
+Morocco,Gas,80.76,TWh
+Austria,Other Fossil,80.14999999999998,TWh
+Morocco,Other Fossil,79.6,TWh
+Sweden,Other Fossil,78.15,TWh
+Senegal,Other Fossil,77.35000000000001,TWh
+Puerto Rico,Coal,73.38999999999999,TWh
+Dominican Republic (the),Coal,70.88999999999999,TWh
+Malaysia,Other Fossil,70.72,TWh
+Iran (Islamic Republic of),Nuclear,69.84,TWh
+Czechia,Gas,67.76,TWh
+"Tanzania, the United Republic of",Gas,66.78999999999999,TWh
+Azerbaijan,Other Fossil,65.18999999999998,TWh
+Uzbekistan,Coal,64.63000000000001,TWh
+United Arab Emirates,Nuclear,64.55000000000001,TWh
+Armenia,Gas,64.03,TWh
+Sri Lanka,Coal,63.32000000000001,TWh
+Bangladesh,Coal,62.14,TWh
+Croatia,Gas,60.760000000000005,TWh
+Czechia,Other Fossil,60.55000000000001,TWh
+Slovakia,Gas,59.61,TWh
+Thailand,Other Fossil,56.739999999999995,TWh
+Armenia,Nuclear,56.27,TWh
+Kazakhstan,Other Fossil,55.54,TWh
+Panama,Other Fossil,54.18,TWh
+New Zealand,Coal,53.59,TWh
+Latvia,Gas,52.089999999999996,TWh
+Cuba,Gas,51.36000000000001,TWh
+Bulgaria,Gas,51.24999999999999,TWh
+Argentina,Coal,49.190000000000005,TWh
+Croatia,Coal,48.760000000000005,TWh
+Angola,Other Fossil,48.02,TWh
+Nicaragua,Other Fossil,47.61999999999999,TWh
+Papua New Guinea,Other Fossil,47.21,TWh
+Georgia,Gas,47.120000000000005,TWh
+Bahamas (the),Other Fossil,46.00000000000001,TWh
+Ghana,Other Fossil,45.77,TWh
+El Salvador,Other Fossil,44.779999999999994,TWh
+Cambodia,Coal,44.76,TWh
+Lithuania,Gas,44.73,TWh
+Guatemala,Coal,44.25,TWh
+Guatemala,Other Fossil,43.84,TWh
+Denmark,Other Fossil,42.98,TWh
+Viet Nam,Other Fossil,42.87,TWh
+Kenya,Other Fossil,42.54999999999999,TWh
+Uzbekistan,Other Fossil,41.47999999999999,TWh
+Guam,Other Fossil,40.959999999999994,TWh
+Colombia,Other Fossil,40.25000000000001,TWh
+Norway,Gas,39.650000000000006,TWh
+Belarus,Nuclear,39.07,TWh
+Ecuador,Gas,38.6,TWh
+Botswana,Coal,37.21,TWh
+Luxembourg,Gas,36.61000000000001,TWh
+Malta,Other Fossil,34.940000000000005,TWh
+South Africa,Other Fossil,34.669999999999995,TWh
+Peru,Other Fossil,33.82000000000001,TWh
+Mali,Other Fossil,33.33,TWh
+Martinique,Other Fossil,31.859999999999996,TWh
+Switzerland,Other Fossil,31.630000000000003,TWh
+New Caledonia,Other Fossil,30.709999999999997,TWh
+Uruguay,Other Fossil,30.470000000000006,TWh
+Romania,Other Fossil,30.059999999999995,TWh
+Kyrgyzstan,Coal,29.390000000000004,TWh
+Ukraine,Other Fossil,29.200000000000003,TWh
+Oman,Other Fossil,28.650000000000006,TWh
+Belarus,Other Fossil,27.849999999999998,TWh
+Montenegro,Coal,26.930000000000003,TWh
+Slovakia,Other Fossil,26.61999999999999,TWh
+Mozambique,Gas,26.419999999999995,TWh
+Mauritius,Other Fossil,26.23,TWh
+Congo (the),Gas,25.91,TWh
+Myanmar,Coal,24.88,TWh
+Hungary,Other Fossil,24.699999999999992,TWh
+Reunion,Coal,24.59,TWh
+Croatia,Other Fossil,23.789999999999992,TWh
+Mauritius,Coal,23.280000000000005,TWh
+Barbados,Other Fossil,23.28,TWh
+Cameroon,Gas,22.97,TWh
+Guyana,Other Fossil,22.47,TWh
+Guadeloupe,Other Fossil,22.20000000000001,TWh
+Virgin Islands (U.S.),Other Fossil,20.329999999999995,TWh
+Cameroon,Other Fossil,19.89,TWh
+Suriname,Other Fossil,19.509999999999994,TWh
+Aruba,Other Fossil,19.24,TWh
+Yemen,Gas,18.85,TWh
+Macao,Other Fossil,18.240000000000002,TWh
+Switzerland,Gas,18.159999999999997,TWh
+Burkina Faso,Other Fossil,18.090000000000003,TWh
+Gabon,Gas,18.05,TWh
+Sweden,Coal,17.650000000000006,TWh
+Korea (the Democratic People's Republic of),Other Fossil,17.48,TWh
+Mauritania,Other Fossil,17.45,TWh
+Sweden,Gas,16.83,TWh
+Algeria,Other Fossil,16.49,TWh
+New Zealand,Other Fossil,15.88,TWh
+Bermuda,Other Fossil,15.730000000000002,TWh
+Papua New Guinea,Gas,15.709999999999999,TWh
+Cambodia,Other Fossil,15.690000000000001,TWh
+Serbia,Gas,15.49,TWh
+Madagascar,Other Fossil,15.44,TWh
+Reunion,Other Fossil,15.34,TWh
+New Caledonia,Coal,14.98,TWh
+Peru,Coal,14.630000000000003,TWh
+Iran (Islamic Republic of),Coal,14.540000000000001,TWh
+Haiti,Other Fossil,14.49,TWh
+Malta,Gas,14.399999999999999,TWh
+Cayman Islands (the),Other Fossil,14.389999999999999,TWh
+Lithuania,Other Fossil,14.17,TWh
+Zambia,Coal,12.89,TWh
+Tajikistan,Coal,12.67,TWh
+Norway,Other Fossil,12.19,TWh
+Kyrgyzstan,Gas,11.899999999999997,TWh
+Maldives,Other Fossil,11.439999999999998,TWh
+Equatorial Guinea,Gas,11.42,TWh
+Slovenia,Gas,11.299999999999999,TWh
+Tunisia,Other Fossil,11.190000000000001,TWh
+Guinea,Other Fossil,11.17,TWh
+Bulgaria,Other Fossil,10.979999999999999,TWh
+North Macedonia,Gas,10.629999999999999,TWh
+Panama,Gas,10.629999999999999,TWh
+"Palestine, State of",Other Fossil,10.11,TWh
+Jamaica,Gas,10.01,TWh
+South Africa,Gas,9.950000000000001,TWh
+French Polynesia,Other Fossil,9.660000000000002,TWh
+Seychelles,Other Fossil,9.39,TWh
+Costa Rica,Other Fossil,9.1,TWh
+Fiji,Other Fossil,9.0,TWh
+"Tanzania, the United Republic of",Other Fossil,8.959999999999997,TWh
+Guadeloupe,Coal,8.450000000000001,TWh
+Angola,Gas,8.41,TWh
+Saint Lucia,Other Fossil,8.22,TWh
+Gabon,Other Fossil,8.04,TWh
+Somalia,Other Fossil,7.6999999999999975,TWh
+Panama,Coal,7.65,TWh
+Eritrea,Other Fossil,7.229999999999999,TWh
+French Guiana,Other Fossil,7.219999999999999,TWh
+Antigua and Barbuda,Other Fossil,7.079999999999999,TWh
+Gambia (the),Other Fossil,6.909999999999998,TWh
+Singapore,Coal,6.690000000000001,TWh
+Cabo Verde,Other Fossil,6.6499999999999995,TWh
+South Sudan,Other Fossil,6.28,TWh
+Liberia,Other Fossil,6.219999999999999,TWh
+Uganda,Other Fossil,6.1000000000000005,TWh
+Estonia,Gas,5.969999999999998,TWh
+Timor-Leste,Other Fossil,5.84,TWh
+Brunei Darussalam,Coal,5.37,TWh
+Djibouti,Other Fossil,5.289999999999998,TWh
+Mongolia,Other Fossil,5.279999999999999,TWh
+Hong Kong,Other Fossil,5.26,TWh
+Niger (the),Other Fossil,5.03,TWh
+Chad,Other Fossil,5.01,TWh
+Turks and Caicos Islands (the),Other Fossil,4.739999999999999,TWh
+Serbia,Other Fossil,4.72,TWh
+Saint Kitts and Nevis,Other Fossil,4.640000000000001,TWh
+Niger (the),Coal,4.54,TWh
+Grenada,Other Fossil,4.440000000000001,TWh
+North Macedonia,Other Fossil,4.369999999999998,TWh
+Tajikistan,Gas,4.2700000000000005,TWh
+Macao,Gas,4.25,TWh
+Virgin Islands (British),Other Fossil,4.120000000000001,TWh
+American Samoa,Other Fossil,4.11,TWh
+Faroe Islands (the),Other Fossil,4.03,TWh
+Benin,Gas,3.88,TWh
+United Arab Emirates,Coal,3.7399999999999998,TWh
+Benin,Other Fossil,3.710000000000001,TWh
+Zambia,Other Fossil,3.7,TWh
+Senegal,Coal,3.6599999999999993,TWh
+Rwanda,Other Fossil,3.5700000000000003,TWh
+Togo,Gas,3.4899999999999998,TWh
+Togo,Other Fossil,3.419999999999999,TWh
+Gibraltar,Other Fossil,3.3800000000000003,TWh
+Bolivia,Other Fossil,2.8299999999999996,TWh
+Malawi,Other Fossil,2.76,TWh
+Saint Vincent and the Grenadines,Other Fossil,2.7599999999999993,TWh
+Madagascar,Coal,2.7299999999999995,TWh
+Myanmar,Other Fossil,2.72,TWh
+Greenland,Other Fossil,2.64,TWh
+Afghanistan,Other Fossil,2.450000000000001,TWh
+Dominica,Other Fossil,2.41,TWh
+Mozambique,Other Fossil,2.2399999999999998,TWh
+Cote d'Ivoire,Other Fossil,2.09,TWh
+Solomon Islands,Other Fossil,1.9800000000000006,TWh
+Kyrgyzstan,Other Fossil,1.9300000000000006,TWh
+Samoa,Other Fossil,1.8700000000000006,TWh
+Afghanistan,Coal,1.8500000000000003,TWh
+Congo (the),Other Fossil,1.8299999999999998,TWh
+Bosnia Herzegovina,Other Fossil,1.7400000000000007,TWh
+Comoros (the),Other Fossil,1.6500000000000004,TWh
+Rwanda,Gas,1.5699999999999998,TWh
+Sao Tome and Principe,Other Fossil,1.4200000000000004,TWh
+Lao People's Democratic Republic (the),Other Fossil,1.4200000000000002,TWh
+Senegal,Gas,1.3700000000000003,TWh
+Vanuatu,Other Fossil,1.3500000000000008,TWh
+Luxembourg,Other Fossil,1.3500000000000005,TWh
+Sierra Leone,Other Fossil,1.3400000000000007,TWh
+Tonga,Other Fossil,1.2500000000000007,TWh
+Moldova,Other Fossil,1.1800000000000002,TWh
+Lebanon,Gas,1.18,TWh
+Albania,Other Fossil,1.1199999999999999,TWh
+Botswana,Other Fossil,1.07,TWh
+Guinea-Bissau,Other Fossil,1.03,TWh
+Saint Pierre and Miquelon,Other Fossil,1.0200000000000002,TWh
+Belize,Other Fossil,1.0100000000000005,TWh
+Norway,Coal,0.9800000000000003,TWh
+Gibraltar,Gas,0.94,TWh
+Namibia,Coal,0.9300000000000004,TWh
+Slovenia,Other Fossil,0.9100000000000004,TWh
+Brunei Darussalam,Other Fossil,0.9100000000000003,TWh
+Georgia,Other Fossil,0.9100000000000001,TWh
+Western Sahara,Other Fossil,0.8799999999999998,TWh
+Burundi,Other Fossil,0.87,TWh
+Honduras,Coal,0.7900000000000003,TWh
+Bahrain,Other Fossil,0.76,TWh
+Latvia,Other Fossil,0.71,TWh
+Nauru,Other Fossil,0.7000000000000003,TWh
+Zimbabwe,Other Fossil,0.7000000000000002,TWh
+Cook Islands (the),Other Fossil,0.6700000000000004,TWh
+Kiribati,Other Fossil,0.5700000000000002,TWh
+"Tanzania, the United Republic of",Coal,0.54,TWh
+Trinidad and Tobago,Other Fossil,0.5099999999999999,TWh
+Belarus,Coal,0.4600000000000002,TWh
+Barbados,Gas,0.4600000000000002,TWh
+Kosovo,Other Fossil,0.4500000000000002,TWh
+Congo (the Democratic Republic of the),Gas,0.45000000000000007,TWh
+Bosnia Herzegovina,Gas,0.43000000000000016,TWh
+Eswatini,Coal,0.42000000000000004,TWh
+Ethiopia,Other Fossil,0.39000000000000007,TWh
+Uruguay,Gas,0.38,TWh
+Suriname,Gas,0.3600000000000001,TWh
+Central African Republic (the),Other Fossil,0.3500000000000001,TWh
+Niger (the),Gas,0.29,TWh
+Falkland Islands (the) [Malvinas],Other Fossil,0.2500000000000001,TWh
+Rwanda,Coal,0.25,TWh
+Equatorial Guinea,Other Fossil,0.24000000000000007,TWh
+Montserrat,Other Fossil,0.23000000000000007,TWh
+"Saint Helena, Ascension and Tristan da Cunha",Other Fossil,0.23000000000000007,TWh
+Congo (the Democratic Republic of the),Other Fossil,0.20000000000000007,TWh
+Namibia,Other Fossil,0.18000000000000005,TWh
+Nepal,Other Fossil,0.15,TWh
+Eswatini,Other Fossil,0.13999999999999999,TWh
+Belize,Gas,0.05,TWh
+Georgia,Coal,0.05,TWh
+Estonia,Coal,0.04,TWh
+Guatemala,Gas,0.03,TWh
+Iceland,Other Fossil,0.02,TWh
+Guyana,Gas,0.02,TWh
+Paraguay,Other Fossil,0.01,TWh
+Mauritania,Nuclear,0.0,TWh
+Tunisia,Nuclear,0.0,TWh
+Syrian Arab Republic (the),Nuclear,0.0,TWh
+Mongolia,Gas,0.0,TWh
+Georgia,Nuclear,0.0,TWh
+Eswatini,Nuclear,0.0,TWh
+Venezuela (Bolivarian Republic of),Nuclear,0.0,TWh
+Saint Pierre and Miquelon,Coal,0.0,TWh
+Bhutan,Gas,0.0,TWh
+Djibouti,Gas,0.0,TWh
+Viet Nam,Nuclear,0.0,TWh
+Comoros (the),Gas,0.0,TWh
+Guam,Coal,0.0,TWh
+Guinea,Gas,0.0,TWh
+Grenada,Nuclear,0.0,TWh
+Hong Kong,Nuclear,0.0,TWh
+Guinea,Coal,0.0,TWh
+Somalia,Coal,0.0,TWh
+Solomon Islands,Gas,0.0,TWh
+Liberia,Coal,0.0,TWh
+"Palestine, State of",Nuclear,0.0,TWh
+Luxembourg,Nuclear,0.0,TWh
+Kosovo,Gas,0.0,TWh
+Egypt,Coal,0.0,TWh
+American Samoa,Coal,0.0,TWh
+Colombia,Nuclear,0.0,TWh
+Guinea-Bissau,Coal,0.0,TWh
+Tonga,Coal,0.0,TWh
+Zambia,Gas,0.0,TWh
+Burkina Faso,Coal,0.0,TWh
+Albania,Nuclear,0.0,TWh
+Peru,Nuclear,0.0,TWh
+Bhutan,Nuclear,0.0,TWh
+Vanuatu,Coal,0.0,TWh
+Antigua and Barbuda,Gas,0.0,TWh
+Jordan,Nuclear,0.0,TWh
+Montenegro,Other Fossil,0.0,TWh
+Cook Islands (the),Nuclear,0.0,TWh
+Niger (the),Nuclear,0.0,TWh
+Nepal,Coal,0.0,TWh
+Gibraltar,Nuclear,0.0,TWh
+Sierra Leone,Nuclear,0.0,TWh
+Falkland Islands (the) [Malvinas],Nuclear,0.0,TWh
+Ethiopia,Gas,0.0,TWh
+Costa Rica,Coal,0.0,TWh
+Puerto Rico,Nuclear,0.0,TWh
+Congo (the),Coal,0.0,TWh
+Guyana,Coal,0.0,TWh
+Bhutan,Other Fossil,0.0,TWh
+South Sudan,Gas,0.0,TWh
+Nigeria,Nuclear,0.0,TWh
+Tunisia,Coal,0.0,TWh
+Bahrain,Coal,0.0,TWh
+French Polynesia,Coal,0.0,TWh
+Niue,Coal,0.0,TWh
+Somalia,Gas,0.0,TWh
+Portugal,Nuclear,0.0,TWh
+Guinea,Nuclear,0.0,TWh
+Aruba,Nuclear,0.0,TWh
+Greenland,Gas,0.0,TWh
+Lao People's Democratic Republic (the),Gas,0.0,TWh
+Saint Lucia,Nuclear,0.0,TWh
+El Salvador,Nuclear,0.0,TWh
+Tonga,Nuclear,0.0,TWh
+Guyana,Nuclear,0.0,TWh
+Ghana,Coal,0.0,TWh
+Greenland,Coal,0.0,TWh
+Sri Lanka,Gas,0.0,TWh
+Gibraltar,Coal,0.0,TWh
+Austria,Nuclear,0.0,TWh
+Guam,Nuclear,0.0,TWh
+Kuwait,Coal,0.0,TWh
+Qatar,Coal,0.0,TWh
+Macao,Nuclear,0.0,TWh
+Samoa,Coal,0.0,TWh
+Ethiopia,Nuclear,0.0,TWh
+Malawi,Coal,0.0,TWh
+Armenia,Coal,0.0,TWh
+Kiribati,Coal,0.0,TWh
+Chad,Nuclear,0.0,TWh
+Uruguay,Coal,0.0,TWh
+Cyprus,Gas,0.0,TWh
+Gambia (the),Coal,0.0,TWh
+Mauritius,Nuclear,0.0,TWh
+North Macedonia,Nuclear,0.0,TWh
+Saint Kitts and Nevis,Coal,0.0,TWh
+Afghanistan,Gas,0.0,TWh
+Lesotho,Other Fossil,0.0,TWh
+Iceland,Gas,0.0,TWh
+Cyprus,Coal,0.0,TWh
+Malta,Coal,0.0,TWh
+Denmark,Nuclear,0.0,TWh
+Samoa,Gas,0.0,TWh
+Ghana,Nuclear,0.0,TWh
+Montenegro,Nuclear,0.0,TWh
+Paraguay,Gas,0.0,TWh
+Italy,Nuclear,0.0,TWh
+Falkland Islands (the) [Malvinas],Coal,0.0,TWh
+Qatar,Other Fossil,0.0,TWh
+Montserrat,Nuclear,0.0,TWh
+Liberia,Gas,0.0,TWh
+Guam,Gas,0.0,TWh
+Nicaragua,Gas,0.0,TWh
+Western Sahara,Coal,0.0,TWh
+Saint Kitts and Nevis,Gas,0.0,TWh
+Honduras,Gas,0.0,TWh
+Haiti,Gas,0.0,TWh
+Israel,Nuclear,0.0,TWh
+Guinea-Bissau,Nuclear,0.0,TWh
+Gambia (the),Nuclear,0.0,TWh
+Costa Rica,Gas,0.0,TWh
+Senegal,Nuclear,0.0,TWh
+El Salvador,Coal,0.0,TWh
+Luxembourg,Coal,0.0,TWh
+Turkmenistan,Coal,0.0,TWh
+Lesotho,Coal,0.0,TWh
+Kyrgyzstan,Nuclear,0.0,TWh
+Maldives,Gas,0.0,TWh
+Bolivia,Nuclear,0.0,TWh
+Kiribati,Gas,0.0,TWh
+South Sudan,Nuclear,0.0,TWh
+Zambia,Nuclear,0.0,TWh
+Turkmenistan,Other Fossil,0.0,TWh
+Saudi Arabia,Coal,0.0,TWh
+Equatorial Guinea,Nuclear,0.0,TWh
+Montserrat,Coal,0.0,TWh
+Barbados,Nuclear,0.0,TWh
+Iraq,Coal,0.0,TWh
+Saint Pierre and Miquelon,Nuclear,0.0,TWh
+Western Sahara,Nuclear,0.0,TWh
+Saint Lucia,Coal,0.0,TWh
+Uruguay,Nuclear,0.0,TWh
+Guinea-Bissau,Gas,0.0,TWh
+Brunei Darussalam,Nuclear,0.0,TWh
+Comoros (the),Coal,0.0,TWh
+Bangladesh,Nuclear,0.0,TWh
+Paraguay,Coal,0.0,TWh
+Tajikistan,Other Fossil,0.0,TWh
+Mauritius,Gas,0.0,TWh
+Eritrea,Coal,0.0,TWh
+Malta,Nuclear,0.0,TWh
+Trinidad and Tobago,Nuclear,0.0,TWh
+Congo (the),Nuclear,0.0,TWh
+Azerbaijan,Nuclear,0.0,TWh
+Nigeria,Coal,0.0,TWh
+Virgin Islands (U.S.),Nuclear,0.0,TWh
+El Salvador,Gas,0.0,TWh
+Gambia (the),Gas,0.0,TWh
+Bahamas (the),Gas,0.0,TWh
+Saint Vincent and the Grenadines,Coal,0.0,TWh
+Cameroon,Coal,0.0,TWh
+Algeria,Coal,0.0,TWh
+Tajikistan,Nuclear,0.0,TWh
+Sudan (the),Nuclear,0.0,TWh
+Somalia,Nuclear,0.0,TWh
+"Saint Helena, Ascension and Tristan da Cunha",Nuclear,0.0,TWh
+United Arab Emirates,Other Fossil,0.0,TWh
+Ecuador,Coal,0.0,TWh
+Kuwait,Nuclear,0.0,TWh
+Kiribati,Nuclear,0.0,TWh
+Algeria,Nuclear,0.0,TWh
+"Tanzania, the United Republic of",Nuclear,0.0,TWh
+Malawi,Nuclear,0.0,TWh
+Namibia,Gas,0.0,TWh
+Bolivia,Coal,0.0,TWh
+Kenya,Coal,0.0,TWh
+Fiji,Coal,0.0,TWh
+Kosovo,Nuclear,0.0,TWh
+Gabon,Nuclear,0.0,TWh
+Armenia,Other Fossil,0.0,TWh
+Mauritania,Coal,0.0,TWh
+New Zealand,Nuclear,0.0,TWh
+Fiji,Nuclear,0.0,TWh
+Rwanda,Nuclear,0.0,TWh
+Botswana,Nuclear,0.0,TWh
+Faroe Islands (the),Coal,0.0,TWh
+New Caledonia,Nuclear,0.0,TWh
+Guatemala,Nuclear,0.0,TWh
+Turkmenistan,Nuclear,0.0,TWh
+Saint Lucia,Gas,0.0,TWh
+Vanuatu,Nuclear,0.0,TWh
+Eritrea,Gas,0.0,TWh
+American Samoa,Gas,0.0,TWh
+Cambodia,Gas,0.0,TWh
+Cabo Verde,Coal,0.0,TWh
+Burundi,Coal,0.0,TWh
+Poland,Nuclear,0.0,TWh
+Lebanon,Coal,0.0,TWh
+Serbia,Nuclear,0.0,TWh
+Norway,Nuclear,0.0,TWh
+Macao,Coal,0.0,TWh
+Burkina Faso,Gas,0.0,TWh
+Dominica,Nuclear,0.0,TWh
+Moldova,Nuclear,0.0,TWh
+Latvia,Coal,0.0,TWh
+Namibia,Nuclear,0.0,TWh
+Turkey,Nuclear,0.0,TWh
+Moldova,Coal,0.0,TWh
+Papua New Guinea,Nuclear,0.0,TWh
+Uganda,Nuclear,0.0,TWh
+Cote d'Ivoire,Coal,0.0,TWh
+Cabo Verde,Gas,0.0,TWh
+Iceland,Nuclear,0.0,TWh
+"Palestine, State of",Gas,0.0,TWh
+Oman,Coal,0.0,TWh
+Latvia,Nuclear,0.0,TWh
+Cote d'Ivoire,Nuclear,0.0,TWh
+Bahamas (the),Nuclear,0.0,TWh
+Philippines (the),Nuclear,0.0,TWh
+Greece,Nuclear,0.0,TWh
+Fiji,Gas,0.0,TWh
+Nigeria,Other Fossil,0.0,TWh
+"Palestine, State of",Coal,0.0,TWh
+Korea (the Democratic People's Republic of),Gas,0.0,TWh
+Nicaragua,Nuclear,0.0,TWh
+Niue,Other Fossil,0.0,TWh
+Gabon,Coal,0.0,TWh
+Sao Tome and Principe,Nuclear,0.0,TWh
+Yemen,Nuclear,0.0,TWh
+Dominica,Gas,0.0,TWh
+Virgin Islands (British),Nuclear,0.0,TWh
+Faroe Islands (the),Gas,0.0,TWh
+Nauru,Nuclear,0.0,TWh
+Angola,Nuclear,0.0,TWh
+Sao Tome and Principe,Coal,0.0,TWh
+Sri Lanka,Nuclear,0.0,TWh
+Solomon Islands,Coal,0.0,TWh
+Afghanistan,Nuclear,0.0,TWh
+Burundi,Nuclear,0.0,TWh
+Greenland,Nuclear,0.0,TWh
+Lao People's Democratic Republic (the),Nuclear,0.0,TWh
+Belize,Nuclear,0.0,TWh
+Virgin Islands (U.S.),Gas,0.0,TWh
+Malawi,Gas,0.0,TWh
+Kenya,Nuclear,0.0,TWh
+Turks and Caicos Islands (the),Gas,0.0,TWh
+Bahamas (the),Coal,0.0,TWh
+Liberia,Nuclear,0.0,TWh
+Cayman Islands (the),Gas,0.0,TWh
+Lithuania,Coal,0.0,TWh
+Vanuatu,Gas,0.0,TWh
+Azerbaijan,Coal,0.0,TWh
+Maldives,Nuclear,0.0,TWh
+Ecuador,Nuclear,0.0,TWh
+Trinidad and Tobago,Coal,0.0,TWh
+Saint Vincent and the Grenadines,Gas,0.0,TWh
+Mozambique,Coal,0.0,TWh
+Virgin Islands (U.S.),Coal,0.0,TWh
+Djibouti,Nuclear,0.0,TWh
+Iraq,Nuclear,0.0,TWh
+Sierra Leone,Coal,0.0,TWh
+Congo (the Democratic Republic of the),Coal,0.0,TWh
+Oman,Nuclear,0.0,TWh
+Jordan,Coal,0.0,TWh
+Montserrat,Gas,0.0,TWh
+Sudan (the),Gas,0.0,TWh
+Bhutan,Coal,0.0,TWh
+Equatorial Guinea,Coal,0.0,TWh
+Bermuda,Gas,0.0,TWh
+French Polynesia,Gas,0.0,TWh
+Seychelles,Gas,0.0,TWh
+Paraguay,Nuclear,0.0,TWh
+"Saint Helena, Ascension and Tristan da Cunha",Gas,0.0,TWh
+Mongolia,Nuclear,0.0,TWh
+Sudan (the),Coal,0.0,TWh
+Central African Republic (the),Gas,0.0,TWh
+Saint Pierre and Miquelon,Gas,0.0,TWh
+Timor-Leste,Coal,0.0,TWh
+Botswana,Gas,0.0,TWh
+Bermuda,Coal,0.0,TWh
+Uganda,Gas,0.0,TWh
+South Sudan,Coal,0.0,TWh
+Timor-Leste,Gas,0.0,TWh
+Qatar,Nuclear,0.0,TWh
+Angola,Coal,0.0,TWh
+Cuba,Nuclear,0.0,TWh
+Cook Islands (the),Coal,0.0,TWh
+Cambodia,Nuclear,0.0,TWh
+Estonia,Nuclear,0.0,TWh
+Jamaica,Nuclear,0.0,TWh
+French Polynesia,Nuclear,0.0,TWh
+Madagascar,Nuclear,0.0,TWh
+Chad,Gas,0.0,TWh
+Haiti,Nuclear,0.0,TWh
+Jamaica,Coal,0.0,TWh
+Syrian Arab Republic (the),Coal,0.0,TWh
+Comoros (the),Nuclear,0.0,TWh
+Lesotho,Gas,0.0,TWh
+Zimbabwe,Nuclear,0.0,TWh
+Saint Vincent and the Grenadines,Nuclear,0.0,TWh
+Seychelles,Coal,0.0,TWh
+Seychelles,Nuclear,0.0,TWh
+Benin,Coal,0.0,TWh
+Belize,Coal,0.0,TWh
+Samoa,Nuclear,0.0,TWh
+Bermuda,Nuclear,0.0,TWh
+Australia,Nuclear,0.0,TWh
+Papua New Guinea,Coal,0.0,TWh
+Albania,Gas,0.0,TWh
+Myanmar,Nuclear,0.0,TWh
+Dominican Republic (the),Nuclear,0.0,TWh
+Kenya,Gas,0.0,TWh
+Uzbekistan,Nuclear,0.0,TWh
+Cook Islands (the),Gas,0.0,TWh
+Turks and Caicos Islands (the),Nuclear,0.0,TWh
+Timor-Leste,Nuclear,0.0,TWh
+Western Sahara,Gas,0.0,TWh
+Cabo Verde,Nuclear,0.0,TWh
+Cayman Islands (the),Coal,0.0,TWh
+Mali,Nuclear,0.0,TWh
+Solomon Islands,Nuclear,0.0,TWh
+Yemen,Coal,0.0,TWh
+Nepal,Gas,0.0,TWh
+Eritrea,Nuclear,0.0,TWh
+Ireland,Nuclear,0.0,TWh
+Virgin Islands (British),Gas,0.0,TWh
+Cayman Islands (the),Nuclear,0.0,TWh
+Antigua and Barbuda,Nuclear,0.0,TWh
+Niue,Gas,0.0,TWh
+Tonga,Gas,0.0,TWh
+Albania,Coal,0.0,TWh
+Mali,Coal,0.0,TWh
+Grenada,Coal,0.0,TWh
+Suriname,Nuclear,0.0,TWh
+Benin,Nuclear,0.0,TWh
+Croatia,Nuclear,0.0,TWh
+Antigua and Barbuda,Coal,0.0,TWh
+Togo,Nuclear,0.0,TWh
+Nicaragua,Coal,0.0,TWh
+Mozambique,Nuclear,0.0,TWh
+Nauru,Gas,0.0,TWh
+Maldives,Coal,0.0,TWh
+"Saint Helena, Ascension and Tristan da Cunha",Coal,0.0,TWh
+Barbados,Coal,0.0,TWh
+Cyprus,Nuclear,0.0,TWh
+Libya,Nuclear,0.0,TWh
+Venezuela (Bolivarian Republic of),Coal,0.0,TWh
+Aruba,Coal,0.0,TWh
+Cuba,Coal,0.0,TWh
+Mauritania,Gas,0.0,TWh
+Dominica,Coal,0.0,TWh
+Central African Republic (the),Coal,0.0,TWh
+Bosnia Herzegovina,Nuclear,0.0,TWh
+Saint Kitts and Nevis,Nuclear,0.0,TWh
+Suriname,Coal,0.0,TWh
+Bahrain,Nuclear,0.0,TWh
+Virgin Islands (British),Coal,0.0,TWh
+Central African Republic (the),Nuclear,0.0,TWh
+Niue,Nuclear,0.0,TWh
+Burkina Faso,Nuclear,0.0,TWh
+Nauru,Coal,0.0,TWh
+Costa Rica,Nuclear,0.0,TWh
+New Caledonia,Gas,0.0,TWh
+Sierra Leone,Gas,0.0,TWh
+Korea (the Democratic People's Republic of),Nuclear,0.0,TWh
+Haiti,Coal,0.0,TWh
+Congo (the Democratic Republic of the),Nuclear,0.0,TWh
+Togo,Coal,0.0,TWh
+Morocco,Nuclear,0.0,TWh
+Sao Tome and Principe,Gas,0.0,TWh
+Falkland Islands (the) [Malvinas],Gas,0.0,TWh
+Madagascar,Gas,0.0,TWh
+Panama,Nuclear,0.0,TWh
+Nepal,Nuclear,0.0,TWh
+Chad,Coal,0.0,TWh
+Libya,Coal,0.0,TWh
+Grenada,Gas,0.0,TWh
+Turks and Caicos Islands (the),Coal,0.0,TWh
+Mali,Gas,0.0,TWh
+Aruba,Gas,0.0,TWh
+Faroe Islands (the),Nuclear,0.0,TWh
+Uganda,Coal,0.0,TWh
+Iceland,Coal,0.0,TWh
+American Samoa,Nuclear,0.0,TWh
+Montenegro,Gas,0.0,TWh
+Eswatini,Gas,0.0,TWh
+Ethiopia,Coal,0.0,TWh
+Lesotho,Nuclear,0.0,TWh
+Lebanon,Nuclear,0.0,TWh
+Burundi,Gas,0.0,TWh
+Zimbabwe,Gas,0.0,TWh
+Cameroon,Nuclear,0.0,TWh
+Djibouti,Coal,0.0,TWh
+Honduras,Nuclear,0.0,TWh
+Chile,Nuclear,0.0,TWh

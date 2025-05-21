@@ -27,7 +27,41 @@ Objetivo de Desenvolvimento Sustentável: 13 - Ação contra a mudança global d
 
 ## 📁 Estrutura do Repositório
 
-- .[](https://tree.nathanfriend.com/?s=(%27optibs!(%27fancyT~fullPath!false~trailingSlashT~rootDotT)~X(%27X%27.8BVKZ2KZ3KZ4KjG5KBDatasetk*OJ*ProcessamentUgera_YW*temperature_changeJjYJBestrutura.txt8BIk*Q87*Diagrama%201.drawiUQ.png8*I_FisicUmzKjI_L87HHBI-L87HH9I_L.png8BREADME.md8BReNdo_VJZ2JZ3JZ4JjG5J9ScriptkHHBload_dataWHH9mainW810%20directories%2C%2023%20filek%27)~versib!%271%27)*7B6%E2%94%80%E2%94%80%207%E2%94%82%C2%A0%C2%A0%208%5Cn9%E2%94%946B%E2%94%9C6GcbN0H%20%20IMzJ.csv8K.sql8LRelacibalNsultaOenergiaQI_CbceitualT!trueUo87jVCbNkZ1W.py8Xsource!Ytipos_OZ*Gbonj79ks8zodelo%01zkjbZYXWVUTQONLKJIHGB9876*)
+.
+├── .
+├── ├── Consultas
+├── │   ├── consulta01.sql
+├── │   ├── consulta02.sql
+├── │   ├── consulta03.sql
+├── │   ├── consulta04.sql
+├── │   └── consulta05.sql
+├── ├── Datasets
+├── │   ├── energia.csv
+├── │   ├── Processamento
+├── │   │   └── gera_tipos_energia.py
+├── │   ├── temperature_change.csv
+├── │   └── tipos_energia.csv
+├── ├── estrutura.txt
+├── ├── Modelos
+├── │   ├── Modelo_Conceitual
+├── │   │   ├── Diagrama 1.drawio
+├── │   │   └── Modelo_Conceitual.png
+├── │   ├── Modelo_Fisico
+├── │   │   └── modelo.sql
+├── │   └── Modelo_Relacional
+├── │       ├── Modelo-Relacional
+├── │       └── Modelo_Relacional.png
+├── ├── README.md
+├── ├── Resultado_Consultas
+├── │   ├── consulta01.csv
+├── │   ├── consulta02.csv
+├── │   ├── consulta03.csv
+├── │   ├── consulta04.csv
+├── │   └── consulta05.csv
+├── └── Scripts/
+│   ├── ├── load_data.py
+│   └── └── main.py
+└── 10 directories, 23 files
 
 
 

@@ -1,16 +1,21 @@
 import pandas as pd
 import psycopg2
 
-
 sql = '''
-    SELECT p.nome AS PAIS, AVG(g.mud_value) AS avg_valor_temp, te.valor as NOME, te.renovavel as RENOVAVEL
-    FROM "MUD_TEMP" g
-    JOIN "AREA" a ON g.id_area = a.id
-    JOIN "PAIS" p ON a.id = p.id
-    JOIN "GERACAO_ENERGIA" ge ON a.id = ge.id_area
-    JOIN "TIPO_ENERGIA" te ON ge.id_tipo = te.id
-    WHERE te.renovavel = 'true'
-    GROUP BY p.nome, g.mud_value, te.valor, te.renovavel
+    SELECT 
+    p.nome                  AS pais,
+    te.valor                AS tipo_de_emissao,
+    te.renovavel            AS eh_renovavel,
+    ge.unidade_emissao      AS unidade,
+    ROUND(SUM(ge.valor_emissao)::numeric, 3) AS total_emissao,
+	ge.id_ano 				AS ano
+    FROM "GERACAO_ENERGIA" ge
+    JOIN "TIPO_ENERGIA"   te ON ge.id_tipo    = te.id
+    JOIN "AREA"           a  ON ge.id_area    = a.id
+    JOIN "PAIS"           p  ON a.id     = p.id
+    WHERE ge.valor_emissao > 0
+    GROUP BY p.nome, te.valor, te.renovavel, ge.unidade_emissao, ge.id_ano
+    ORDER BY total_emissao DESC;
 '''
 
 conn = psycopg2.connect(

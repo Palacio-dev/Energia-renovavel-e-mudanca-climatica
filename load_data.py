@@ -35,13 +35,13 @@ def load_tipo_energia(cursor: connection):
 
 
 def load_mudanca_temperatura(cursor):
-    # 1) carrega apenas o necessário
+    #carrega apenas o necessário
     anos = list(range(1961, 2020))
     cols_anos = [f"Y{ano}" for ano in anos]
     df = pd.read_csv("Datasets/temperature_change.csv", encoding="ISO-8859-1",
                      usecols=["Area", "Months", "Element"] + cols_anos)
 
-    # 2) melt para long: cada linha vira um único ano
+    #melt para long: cada linha vira um único ano
     df_long = df.melt(
         id_vars=["Area", "Months", "Element"],
         value_vars=cols_anos,
@@ -49,7 +49,7 @@ def load_mudanca_temperatura(cursor):
         value_name="Value"      # o valor naquele ano
     )
 
-    # 3) pivota para ter colunas separadas para os dois elementos
+    #pivota para ter colunas separadas para os dois elementos
     df_pivot = (
         df_long
         .pivot_table(
@@ -74,11 +74,11 @@ def load_mudanca_temperatura(cursor):
     "October":  10,  "November": 11,  "December": 12
     }
 
-    # 1.1) mapa nome_area -> id
+    #mapa nome_area -> id
     cursor.execute('SELECT id,nome FROM "AREA"')
     area_map = {nome: id_ for id_, nome in cursor.fetchall()}
 
-    # 1.2) mapa (numero_mes, ano) -> id_mes
+    #mapa (numero_mes, ano) -> id_mes
     cursor.execute('SELECT id, numero, id_ano FROM "MES"')
     month_map = {
         (numero, id_ano): id_
@@ -100,11 +100,8 @@ def load_mudanca_temperatura(cursor):
 
         cursor.execute('INSERT INTO "MUD_TEMP" (mud_value, desvio_padrao, id_area, id_mes, id_ano) VALUES (%s, %s, %s, %s, %s)',
                        (row['mud_value'], row['desvio_padrao'], id_area, id_mes, ano))
-        
-
 
 def load_geracao_energia(cursor):
-
     cursor.execute('SELECT id, nome FROM "AREA"')
     area_map = {nome: id_ for id_, nome in cursor.fetchall()}
 
@@ -126,7 +123,6 @@ def load_geracao_energia(cursor):
 
     df = df[~df["Unit"].str.contains("%", na=False)]
     df = df[df["Variable"].isin(tipo_map.keys())]
-
 
     for _, row in df.iterrows():
         area = row["Area"]
@@ -186,30 +182,27 @@ def load_geracao_energia(cursor):
             )
 
 def load_pais_grupo(cursor):
-    # 1) lê só as colunas relevantes
+    #lê só as colunas relevantes
     usecols = ["Area", "EU", "OECD", "G20", "G7", "ASEAN"]
     df = pd.read_csv(
         "Datasets/energia.csv",
         usecols=usecols,
         encoding="ISO-8859-1"
     )
-
-    # 2) monta lookup de países
+    #monta lookup de países
     cursor.execute('SELECT id, nome FROM "AREA"')
     area_map = {nome: id_ for id_, nome in cursor.fetchall()}
 
-    # 3) monta lookup de grupos
+    #monta lookup de grupos
     cursor.execute('SELECT id, nome FROM "GRUPO"')
-    # aqui assumimos que na tabela GRUPO a coluna 'valor' guarda strings como 'EU','G20',...
+    
     grupo_map = {nome: id_ for id_, nome in cursor.fetchall()}
 
-    # 4) prepara o INSERT
     sql = """
     INSERT INTO "PAIS_GRUPO" ("Pais_id", "Grupo_id")
     VALUES (%s, %s)
     """
-
-    # 5) para cada linha, associa a cada grupo ativo
+    
     grupos = ["EU", "OECD", "G20", "G7", "ASEAN"]
     inseridos = set()
     for _, row in df.iterrows():
@@ -217,12 +210,10 @@ def load_pais_grupo(cursor):
         if pais not in area_map:
             continue
         Pais_id = area_map[pais]
-
         for grp in grupos:
-            # pode ser 0.0 / 1.0 ou 0/1 — trata tudo como float
             flag = float(row[grp]) if pd.notna(row[grp]) else 0.0
             if flag > 0:
-                # se o grupo existir no mapa, insere
+                #se o grupo existir no mapa, insere
                 Grupo_id = grupo_map.get(grp)
                 if Grupo_id is not None:
                     par = (Pais_id, Grupo_id)

@@ -28,37 +28,41 @@ Objetivo de Desenvolvimento Sustentável: 13 - Ação contra a mudança global d
 ## 📁 Estrutura do Repositório
 
 PROJETO_MCS36
+.
 ├── Consultas
-│ ├── consulta01.sql
-│ ├── consulta02.sql
-│ ├── consulta03.sql
-│ ├── consulta04.sql
-│ └── consulta05.sql
+│   ├── consulta01.sql
+│   ├── consulta02.sql
+│   ├── consulta03.sql
+│   ├── consulta04.sql
+│   └── consulta05.sql
 ├── Datasets
-│ └── Processamento
-│ ├── gera_tipos_energia.py
-│ ├── energia.csv
-│ ├── temperature_change.csv
-│ └── tipos_energia.csv
+│   ├── energia.csv
+│   ├── Processamento
+│   │   └── gera_tipos_energia.py
+│   ├── temperature_change.csv
+│   └── tipos_energia.csv
+├── estrutura.txt
 ├── Modelos
-│ ├── Modelo_Conceitual
-│ │ ├── Diagrama 1.drawio
-│ │ └── Modelo_Conceitual.png
-│ ├── Modelo_Fisico
-│ │ └── modelo.sql
-│ └── Modelo_Relacional
-│ ├── Modelo_Relacional.png
-│ └── Modelo-Relacional
+│   ├── Modelo_Conceitual
+│   │   ├── Diagrama 1.drawio
+│   │   └── Modelo_Conceitual.png
+│   ├── Modelo_Fisico
+│   │   └── modelo.sql
+│   └── Modelo_Relacional
+│       ├── Modelo-Relacional
+│       └── Modelo_Relacional.png
+├── README.md
 ├── Resultado_Consultas
-│ ├── consulta01.csv
-│ ├── consulta02.csv
-│ ├── consulta03.csv
-│ ├── consulta04.csv
-│ └── consulta05.csv
+│   ├── consulta01.csv
+│   ├── consulta02.csv
+│   ├── consulta03.csv
+│   ├── consulta04.csv
+│   └── consulta05.csv
 └── Scripts
-├── pycache/
-├── load_data.py
-└── main.py
+    ├── load_data.py
+    └── main.py
+
+10 directories, 23 files
 
 
 

@@ -45,29 +45,21 @@ tudo AS (
 
 -- tabela de países que tem mais de 50% de geração de energia renovável
 p_tops as (SELECT
-    p.nome AS pais,
-    t.id_ano AS ano,
-    t.total_tudo,
-    r.total_ren,
-	t.unidade_geracao,
-    ROUND(100 * r.total_ren / t.total_tudo, 2) AS PERCENTAGE,
-	t.emissao,
-	t.unidade_emissao
+    t.id_area AS pais_top_2023
 	
 FROM
     tudo AS t
     -- join da soma total e de só renováveis pra cada país/ano
     JOIN renovs r ON t.id_area = r.id_area
-    -- join para os nomes de cada área
-	JOIN "PAIS" p ON p.id = t.id_area
 WHERE
     t.total_tudo != 0 AND ROUND(100 * r.total_ren / t.total_tudo, 2) > 50
+	AND t.id_area IN (SELECT "id" FROM "PAIS")
 ORDER BY
-    PERCENTAGE DESC,
-    pais,
-    ano DESC
+    pais_top_2023
 )
 
+SELECT * FROM p_tops
+	
 
 
 

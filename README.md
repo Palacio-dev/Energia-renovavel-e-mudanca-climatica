@@ -6,13 +6,21 @@ Este repositório contém os arquivos produzidos para o projeto de banco de dado
     Rafael Campideli Hoyos - RA : 175100
     Lucas Palacio Almeida  - RA : 236380  
 
-![Modelo Conceitual](Modelos/modelo_conceitual.png)
 
-📁 Estrutura do Repositório
+## 🧠 Modelos
 
-    
+### Modelo Conceitual
 
-   .
+![Modelo Conceitual](Modelos/Modelo_Conceitual/Modelo_Conceitual.png)
+
+### Modelo Relacional
+
+![Modelo Relacional](Modelos/Modelo_Relacional/Modelo_Relacional.png)
+
+### Modelo Físico
+
+[Acessar pasta com o modelo físico](https://github.com/Palacio-dev/Energia-renovavel-e-mudanca-climatica/tree/main/Modelos/Modelo_Fisico)
+
 
 
 Objetivo de Desenvolvimento Sustentável: 13 - Ação contra a mudança global do clima

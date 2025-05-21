@@ -1,10 +1,13 @@
 📊 Projeto de Banco de Dados — Energia Renovável e Mudança Climática
 
 Este repositório contém os arquivos produzidos para o projeto de banco de dados da equipe, desde a modelagem até a realização de consultas SQL e análise dos dados.
-👥 Integrantes (ID 1)
-    Bruno Cardoso Holanda  - RA : 
-    Rafael Campideli Hoyos - RA : 175100
-    Lucas Palacio Almeida  - RA : 236380  
+Objetivo de Desenvolvimento Sustentável: 13 - Ação contra a mudança global do clima
+
+## 👥 Integrantes (ID 1)
+
+- Bruno Cardoso Holanda  – RA: 167542
+- Rafael Campideli Hoyos – RA: 175100  
+- Lucas Palacio Almeida  – RA: 236380
 
 
 ## 🧠 Modelos
@@ -23,7 +26,7 @@ Este repositório contém os arquivos produzidos para o projeto de banco de dado
 
 
 
-Objetivo de Desenvolvimento Sustentável: 13 - Ação contra a mudança global do clima
+
 
 
 ## 📊 Datasets Utilizados

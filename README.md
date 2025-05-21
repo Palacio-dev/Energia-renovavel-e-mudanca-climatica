@@ -6,7 +6,7 @@ Este repositório contém os arquivos produzidos para o projeto de banco de dado
     Rafael Campideli Hoyos - RA : 175100
     Lucas Palacio Almeida  - RA : 236380  
 
-![Modelo Conceitual](Modelos/Modelo_Conceitual/Diagrama 1.draw.io)
+![Modelo Conceitual](Modelos/Modelo_Conceitual/)
 
 📁 Estrutura do Repositório
 

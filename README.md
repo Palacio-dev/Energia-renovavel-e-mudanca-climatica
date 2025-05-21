@@ -19,7 +19,7 @@ Este repositório contém os arquivos produzidos para o projeto de banco de dado
 
 ### Modelo Físico
 
-[Acessar pasta com o modelo físico](https://github.com/Palacio-dev/Energia-renovavel-e-mudanca-climatica/tree/main/Modelos/Modelo_Fisico)
+[Modelo Físico](https://github.com/Palacio-dev/Energia-renovavel-e-mudanca-climatica/tree/main/Modelos/Modelo_Fisico)
 
 
 

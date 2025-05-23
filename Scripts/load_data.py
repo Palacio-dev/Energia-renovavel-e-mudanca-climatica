@@ -7,15 +7,15 @@ import pandas as pd
 from psycopg2._psycopg import connection
 
 # Carrega os anos e meses no banco de dados
-def load_anos_meses(cursor: connection):
-    # Os datasets contém dados de anos entre 1961 e 2024
-    # Por questões de simplicidade/performance, optamos por adicionar os anos e meses de forma "hardcoded"
-    # adicionamos o ano de 1960 para entender como se comportaria no DB
-    for ano in range(1960, 2025):
-        cursor.execute(f'INSERT INTO "ANO" (id) VALUES ({ano}) ON CONFLICT (id) DO NOTHING')
-        # pra cada ano, adiciona os 12 meses com id no formato m/yyyy
-        for m in range(1, 13):
-            cursor.execute(f'INSERT INTO "MES" (id, numero, id_ano) VALUES (\'{m}/{ano}\', {m}, {ano})')
+# def load_anos_meses(cursor: connection):
+#     # Os datasets contém dados de anos entre 1961 e 2024
+#     # Por questões de simplicidade/performance, optamos por adicionar os anos e meses de forma "hardcoded"
+#     # adicionamos o ano de 1960 para entender como se comportaria no DB
+#     for ano in range(1960, 2025):
+#         cursor.execute(f'INSERT INTO "ANO" (id) VALUES ({ano}) ON CONFLICT (id) DO NOTHING')
+#         # pra cada ano, adiciona os 12 meses com id no formato m/yyyy
+#         for m in range(1, 13):
+#             cursor.execute(f'INSERT INTO "MES" (id, numero, id_ano) VALUES (\'{m}/{ano}\', {m}, {ano})')
 
 # Carrega todas as AREAS, incluindo as heranças: País e Grupo
 # OBS: não carrega as relações entre GRUPO e AREA
@@ -63,7 +63,7 @@ def load_mudanca_temperatura(cursor):
     df = pd.read_csv("Datasets/temperature_change.csv", encoding="ISO-8859-1",
                      usecols=["Area", "Months", "Element"] + cols_anos)
 
-    #melt para long: cada linha vira um único ano
+    # melt para long: cada linha vira um único ano
     df_long = df.melt(
         id_vars=["Area", "Months", "Element"],
         value_vars=cols_anos,
@@ -71,7 +71,7 @@ def load_mudanca_temperatura(cursor):
         value_name="Value"      # o valor naquele ano
     )
 
-    #pivota para ter colunas separadas para os dois elementos
+    # pivota para ter colunas separadas para os dois elementos
     df_pivot = (
         df_long
         .pivot_table(
@@ -80,7 +80,7 @@ def load_mudanca_temperatura(cursor):
             values="Value"
         )
         .reset_index()
-        # opcional: renomeia as colunas pro padrão do seu banco
+        # renomeia as colunas pro padrão do banco
         .rename(columns={
             "Temperature change": "mud_value",
             "Standard Deviation": "desvio_padrao",
@@ -100,12 +100,6 @@ def load_mudanca_temperatura(cursor):
     cursor.execute('SELECT id,nome FROM "AREA"')
     area_map = {nome: id_ for id_, nome in cursor.fetchall()}
 
-    #mapa (numero_mes, ano) -> id_mes
-    cursor.execute('SELECT id, numero, id_ano FROM "MES"')
-    month_map = {
-        (numero, id_ano): id_
-        for id_, numero, id_ano in cursor.fetchall()
-    }
     for _, row in df_pivot.iterrows():
         mes_nome = row["mes"]
         if mes_nome not in month_name_to_num:
@@ -114,14 +108,12 @@ def load_mudanca_temperatura(cursor):
         if area_nome not in area_map:  
             continue
         id_area = area_map[area_nome]
-        numero_mes = month_name_to_num[mes_nome]
         id_area = area_map[row['area']]
-        numero_mes = month_name_to_num[row['mes']]
+        mes = month_name_to_num[row['mes']]
         ano = int(row["ano"][1:])
-        id_mes = month_map[(numero_mes, ano)]
 
-        cursor.execute('INSERT INTO "MUD_TEMP" (mud_value, desvio_padrao, id_area, id_mes, id_ano) VALUES (%s, %s, %s, %s, %s)',
-                       (row['mud_value'], row['desvio_padrao'], id_area, id_mes, ano))
+        cursor.execute('INSERT INTO "MUD_TEMP" (mud_value, desvio_padrao, id_area, mes, ano) VALUES (%s, %s, %s, %s, %s)',
+                       (row['mud_value'], row['desvio_padrao'], id_area, mes, ano))
 
 # Carrega a tabela GERACAO_ENERGIA
 def load_geracao_energia(cursor):
@@ -165,7 +157,6 @@ def load_geracao_energia(cursor):
             continue
 
         id_area = area_map[area]
-        id_ano  = ano
         id_tipo = tipo_map[var]
 
         # se a cetgoria for geração enregia, cria uma linha no banco
@@ -177,7 +168,7 @@ def load_geracao_energia(cursor):
             sql = """
                 INSERT INTO "GERACAO_ENERGIA"
                     (unidade_geracao, valor_geracao,
-                    id_area,          id_ano,
+                    id_area,          ano,
                     id_tipo)
                 VALUES (%s, %s, %s, %s, %s)
             """
@@ -187,7 +178,7 @@ def load_geracao_energia(cursor):
                     unidade_ger,
                     valor_ger,
                     id_area,
-                    id_ano,
+                    ano,
                     id_tipo
                 )
             )
@@ -198,8 +189,8 @@ def load_geracao_energia(cursor):
             valor_emi   = val
 
             # encontra o id da linha correspondente (pais e ano)
-            cursor.execute('SELECT id FROM "GERACAO_ENERGIA" WHERE id_area = %s AND id_ano = %s AND id_tipo = %s', 
-                           (id_area, id_ano, id_tipo))
+            cursor.execute('SELECT id FROM "GERACAO_ENERGIA" WHERE id_area = %s AND ano = %s AND id_tipo = %s', 
+                           (id_area, ano, id_tipo))
             id_row = cursor.fetchone()[0]
 
             # UPDATE

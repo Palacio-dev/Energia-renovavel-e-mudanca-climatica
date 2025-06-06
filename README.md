@@ -195,48 +195,13 @@ Obter o aumento **total acumulado** de temperatura (°C) por país.
 
 ---
 
-### 🟢 Consulta 06 — Geração de Energia Não Renovável
-
-**Objetivo:**  
-Obter o total gerado de energia **não renovável**, por país e tipo de energia.
-
-**Inclui:**
-
-- País
-- Tipo de energia
-- Total gerado
-- Unidade de geração
-
-**Observações:**
-
-- Apenas tipos de energia não renováveis
-- **Ordenação:** total gerado (desc)
-
----
-
-### 🟢 Consulta 07 — IDs de Países com Mais de 50% Renovável em 2023
-
-**Objetivo:**  
-Listar **os IDs** dos países que em 2023 geraram mais de 50% da energia a partir de fontes renováveis.
-
-**Inclui:**
-
-- ID do país (para uso em outras consultas ou visualizações)
-
-**Observações:**
-
-- Ano fixo em 2023
-- Apenas países com >50% renovável
-- IDs extraídos da tabela `"PAIS"`
-
----
 
 ### 🗂️ Observações gerais
 
 - **CTEs (`WITH`)** foram utilizadas para melhorar legibilidade e performance.
 - Percentuais e somas com arredondamento para melhor visualização.
 - Consultas escritas para **PostgreSQL**.
-- Possível extensão para parametrizar ano nas consultas 02 e 07.
+- Possível extensão para parametrizar ano nas consultas 02.
 
 ---
 

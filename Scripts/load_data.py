@@ -6,17 +6,6 @@ Este arquivo contém todas as funções que usamos para carregar os dados dos da
 import pandas as pd
 from psycopg2._psycopg import connection
 
-# Carrega os anos e meses no banco de dados
-# def load_anos_meses(cursor: connection):
-#     # Os datasets contém dados de anos entre 1961 e 2024
-#     # Por questões de simplicidade/performance, optamos por adicionar os anos e meses de forma "hardcoded"
-#     # adicionamos o ano de 1960 para entender como se comportaria no DB
-#     for ano in range(1960, 2025):
-#         cursor.execute(f'INSERT INTO "ANO" (id) VALUES ({ano}) ON CONFLICT (id) DO NOTHING')
-#         # pra cada ano, adiciona os 12 meses com id no formato m/yyyy
-#         for m in range(1, 13):
-#             cursor.execute(f'INSERT INTO "MES" (id, numero, id_ano) VALUES (\'{m}/{ano}\', {m}, {ano})')
-
 # Carrega todas as AREAS, incluindo as heranças: País e Grupo
 # OBS: não carrega as relações entre GRUPO e AREA
 def load_areas(cursor: connection):

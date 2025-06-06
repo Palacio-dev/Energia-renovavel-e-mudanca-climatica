@@ -41,7 +41,6 @@ def conectar():
 
 # chama as funções de load de load_data
 def load_datasets(cursor):
-    load_anos_meses(cursor)
     load_areas(cursor)
     load_tipo_energia(cursor)
     load_mudanca_temperatura(cursor)

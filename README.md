@@ -157,15 +157,7 @@ Obter emissão total de CO₂ por:
 
 ---
 
-### 🟢 Consulta 04 — Emissão de CO₂ por Tipo de Energia (mesma que a 03)
-
-**Objetivo:**  
-Mesma lógica da Consulta 03.  
-**Sugestão:** unificar ambas como uma consulta padrão de emissão por tipo de energia.
-
----
-
-### 🟢 Consulta 05 — Aumento Total de Temperatura por País
+### 🟢 Consulta 04 — Aumento Total de Temperatura por País
 
 **Objetivo:**  
 Obter o aumento **total acumulado** de temperatura (°C) por país.
@@ -182,7 +174,7 @@ Obter o aumento **total acumulado** de temperatura (°C) por país.
 
 ---
 
-### 🟢 Consulta 06 — Geração de Energia Não Renovável
+### 🟢 Consulta 05 — Geração de Energia Não Renovável
 
 **Objetivo:**  
 Obter o total gerado de energia **não renovável**, por país e tipo de energia.
@@ -201,7 +193,7 @@ Obter o total gerado de energia **não renovável**, por país e tipo de energia
 
 ---
 
-### 🟢 Consulta 07 — IDs de Países com Mais de 50% Renovável em 2023
+### 🟢 Consulta 06 — IDs de Países com Mais de 50% Renovável em 2023
 
 **Objetivo:**  
 Listar **os IDs** dos países que em 2023 geraram mais de 50% da energia a partir de fontes renováveis.
